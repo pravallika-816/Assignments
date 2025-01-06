@@ -1,0 +1,53 @@
+Q) Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+
+Data Types:
+A data type defines the type of data that a variable can hold in a programming language. Data types ensure that data is handled correctly and efficiently.
+
+Data types are broadly classified into 2 types
+1.Primitive Data Types:
+  STRING 
+  NUMBER
+  BOOL
+  NULL
+  UNDEFINED
+  1.string:- sequence of characters enclosed within double quotes / single quotes / backticks(``).
+    let message = "Hello, World!";  
+
+  2.number :- it stores all the number data types such as integer , float values etc.
+    let count = 42;  
+    let pi = 3.14159;  
+
+  3.boolean :- it stores true/false values.
+    let isAvailable = true;  
+    let isLoggedIn = false;  
+
+  4.undefined :- it refers to any variable declared but not initialized.
+    let emptyValue = null;  
+
+  5.null :- empty of object.
+    let uninitialized;  // Undefined  
+
+
+
+2. NON permeative data types:
+  non permeative can store multiple values
+  they are user defined
+  FUNCTIONS
+  ARRAYS
+  OBJECTS
+  1.Functions: A block of reusable code that performs a specific task, takes inputs (optional), processes them, and may return a value.
+    function greet(name) {
+    return "Hello, " + name + "!";
+    }
+
+  2.Arrays: A collection of elements (values or objects) stored in a single variable, typically of the same data type, indexed numerically starting from 0.
+    let numbers = [1, 2, 3, 4, 5];
+
+  3.Objects: A collection of key-value pairs used to store data and methods, where keys are property names and values can be data or functions.
+    let person = {
+    name: "Pravallika",
+    age: 25,
+    greet: function() { return "Hi!"; }
+    };
+
+  
