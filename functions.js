@@ -75,3 +75,39 @@ console.log(z(10,30)); // ~ implicit return statement these are used in arrow fu
 
 let z1 = (a,b) => { return a+b} ;
 console.log(z(10,10));
+
+//function hof(a){
+//    return a(); 
+//}
+//let x=hof(function(){return"This is a call back function"})
+//hof(a)
+//console.log(x)
+
+//function add(callback){
+//    return callback(1,3)
+//}
+//let y=add(function(a,b){return a+b})
+//console.log(y)
+
+//let user=['Anju','Navya','Ankey','Shiva','Palli','Appu']
+//user.map((user)=>{
+//    console.log(user)
+//})
+//for (i in user){
+//    console.log(user[i])
+//}
+
+//Clouser
+var a=10;
+let b=20;
+function x(){
+    var user ='Ankita';
+    let company='Google';
+    const salary=100;
+    console.log(user);
+    console.log(company);
+    console.log(salary);
+    
+    console.log(a,b);
+}
+x()
