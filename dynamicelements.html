@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
 </head>
 <body>
-    <!--<h1>Dynamic creation of html element</h1>-->
-    <!--<script src="./DynamicElements.js"></script>
+  <form id="userForm">
+    <label for="uname">Username:</label>
+    <input type="text" id="uname" name="uname" required><br><br>
 
-    <div class="mainBlock"></div>
-    <div class="topBlock">
-        <img src="", alt="">
-    </div>
-    <div class = "bottomBlock">
-        <h1>Heading</h1>
-        <button>view more</button>
-    </div>-->
+    <label for="upass">Password:</label>
+    <input type="password" id="upass" name="upass" required>
+    <input type="checkbox" id="check">
+    <span id="show">show password</span><br><br>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
 
-    <form>
-        <div class="form-group">
-            <label for="uname">UserName:</label>
-            <input type="text" name="uname" id="uname" class="form-control">
-            <label for="upass">PAssword:</label>
-            <input type="password" name="upass" id="upass" class="form-control">
-        </div>
-        <class="form-group">
-            <label for="gender">Gender:</label>
-            <input type="radio" name="gender" id="gender" value="male">Male</span>
-            <input type="radio" name="gender" id="gender" value="female">Female</span>
-            <input type="radio" name="gender" id="gender" value="other">other</span>
-        </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">submit</button>
-        </div>
-    </form>
-</body> 
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="./dynamicelements.js"></script>
+</body>
 </html>
+
