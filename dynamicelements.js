@@ -63,21 +63,38 @@
 let form = document.querySelector("form");
 let username = document.getElementById("uname");
 let password = document.getElementById("upass");
+let check = document.getElementById("check");
+let show = document.getElementById("show");
 let gender = document.querySelectorAll("input[name='gender']");
 
-form.addEventListener("submit", (e)=>{
-    e.preventDefault();
+check.addEventListener("click",e => {
+    if(e.target.checked===true){
+        password.setAttribute("type","text")
+        show.innerText="hide password"
+    }
+    else{
+        password.setAttribute("type","password")
+        show.innerText="show password"
+    }
+});
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault(); 
     let un = username.value;
     let up = password.value;
     let ele = "";
-    //console.log(un);
+
     for (let i = 0; i < gender.length; i++) {
-        if (gender[i].checked == true) {
-            ele += gen[i].value;
+        if (gender[i].checked) {
+            ele = gender[i].value;
+            break; 
         }
     }
-let userDetails={
-    un, up, ele
-};
-console.log(userDetails);
-})
+
+    let userDetails = {
+        username: un,
+        password: up,
+        gender: ele,
+    };
+    console.log(userDetails);
+});
