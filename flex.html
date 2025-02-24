@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+            gap: 3px;
+            /*justify-content: space-between;*/
+            height: 100vh;
+            /*flex-direction:column-reverse;*/
+            /*flex-wrap: wrap;*/        
+            flex-basis:30%;
+        }
+        .common {
+            height: 200px;
+            width: 200px;
+            border: 3px solid rgb(90, 83, 83);
+            color:azure;
+        }
+        .c1 {
+            background-color: rgb(255, 0, 68);
+            /*flex-shrink: 2;*/
+            /*order: 1;*/
+        }
+        .c2 {
+            background-color: rgb(255, 0, 0);
+            /*order: 2;*/
+        }
+        .c3 {
+            background-color: rgb(128, 0, 2);
+            /*order: 3;*/
+        }
+    </style>
+</head>
+
+<body>
+    <section class="parent">
+    <section class="common c1">first</section>
+    <section class="common c2">second</section>
+    <section class="common c3">thrid</section>
+
+    <!-- <section class="common c1">first</section>
+    <section class="common c2">second</section>
+    <section class="common c3">thrid</section>
+
+    <section class="common c1">first</section>
+    <section class="common c2">second</section>
+    <section class="common c3">thrid</section>
+
+    <section class="common c1">first</section>
+    <section class="common c2">second</section>
+    <section class="common c3">thrid</section>
+    </section> -->
+</body>
+</html>
